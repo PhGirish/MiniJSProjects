@@ -9,17 +9,75 @@
 
 body {
   background-color: #8db6fd;
+  height: 100vh;
+}
+.head {
+  position: relative;
+  margin-bottom: 40px;
+}
+.head::after {
+  content: " ";
+  width: 90px;
+  background-color: #009df8;
+  height: 3px;
+  position: absolute;
+  top: 50px;
+  right: 200px;
 }
 
 .container {
   background-color: white;
+  width: 550px;
   position: absolute;
-  top: 20%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 500px;
   padding: 30px;
   text-align: center;
   box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
+}
+
+.quote {
+  margin: 20px;
+  font-weight: 500;
+  height: 100px;
+}
+.author {
+  display: flex;
+  justify-content: end;
+  position: relative;
+
+  margin-bottom: 20px;
+}
+.author::before {
+  content: " ";
+  width: 15px;
+  background-color: #009df8;
+  height: 2px;
+  position: relative;
+  top: 9px;
+  right: 9px;
+  /* top: 12px;
+  left: calc(70% + 5px); */
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+button {
+  padding: 10px 30px;
+  border-radius: 100px;
+  border: none;
+  color: white;
+  background-color: #009df8;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.tweet {
+  color: #009df8;
+  background-color: white;
+  border: 1px solid #009df8;
 }
