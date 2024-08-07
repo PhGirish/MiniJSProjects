@@ -1,0 +1,12 @@
+.show {
+  display: block;
+}
+.dont {
+  display: none;
+}
+
+.box {
+  border: 1px solid black;
+  /* display: flex;
+  flex-direction: column; */
+}
